@@ -81,50 +81,12 @@ header {      /* sert de conteneur en position relative pour le div "header_bg" 
     padding-bottom: 50px;
   }
 
-  .brokenLine {                           /* on crée un div avec une ligne brisée au bottom */
-    width: 100%;                          /* on fait déborder le div pour cacher les effets disgracieux du skew-Y */
-    display: grid;
-    grid-template-columns: 3fr 1fr;       /* on crée une grille avec 4 boîtes dont une avec un angle */
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .flex {
-    display: flex;                        /* les 4 boîtes sont déclarées comme des conteneurs flexbox */
-    height: 300px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    justify-content: center;
-  }
-
-  .un, .deux, .trois, .quatre {
-    background-color: rgb(103, 194, 247);
-  }
-
-  .trois {
-    display: flex;
-    position: relative;
-    justify-content: center;
-  }
-
-  .un {    
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .quatre {
-    transform: skewY(-30deg);             /* ici la boîte flex avec un angle */
-    transform-origin: bottom left;
-
-  }
-
   aside {
-    margin: auto;
-    position: absolute;
-    bottom: 50px;
-    width: 25%;
-    height: 300px;
-    border-radius: 2rem;
-    background-color: rgba(255, 255, 255, 0.2);
+    width: 100vw;
+    height: 600px;
+    background-color: rgb(7, 73, 160);
+    color:lightcyan;
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 50% 100%, 0 76%);   /* chacune des coordoonées est un point du conteneur ; ici 5 points pour un polygon */
   }
 
   footer {                                /* footer arrondi */
