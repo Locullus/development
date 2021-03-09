@@ -31,12 +31,13 @@ header {      /* sert de conteneur en position relative pour le div "header_bg" 
     z-index: 1;
   }
   
+  /* on crée ici un bloc avec une forme inclinée en utilisant la méthode transform: skewY() qui prend en paramètre une valeur d'angle */
   .headerBg {
-    box-shadow: 6px 6px 20px;   /* ajout de l'ombre pour donner un effet 3D ou d'épaisseur */
+    box-shadow: 6px 6px 20px;     /* ajout de l'ombre pour donner un effet 3D ou d'épaisseur */
     position: absolute;
     width: 100%;
-    height: 85%;  /* on n'utilise pas toute la hauteur du conteneur pour éviter que l'ombrage soit rogné */
-    background-color: #ff9d2f; /* une seule couleur de fond plutôt qu'un gradient pour éviter l'effet de crénelage */
+    height: 85%;                  /* on n'utilise pas toute la hauteur du conteneur pour éviter que l'ombrage soit rogné */
+    background-color: #ff9d2f;  /* une seule couleur de fond plutôt qu'un gradient pour éviter l'effet de crénelage */
     transform: skewY(4deg);       /* avec une valeur négative le triangle est inversé, utile pour un bas de page */
     transform-origin: top right;  /* top left pour inverser la direction de l'angle */
   }
@@ -81,6 +82,7 @@ header {      /* sert de conteneur en position relative pour le div "header_bg" 
     padding-bottom: 50px;
   }
 
+  /* on crée ici un bloc avec cette fois 2 angles en utilisant la propriété clip-path: polygon */
   aside {
     width: 100vw;
     height: 600px;
