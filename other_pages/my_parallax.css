@@ -20,17 +20,17 @@ body {
 
 /* la première image est appliquée sur la totalité de l'écran */
 .parallaxe1 {
-    background-image: url('../../parallax_effect/parallax1.jpg');
+    background-image: url('../assets/parallax1.jpg');
     min-height: 100%;min-height: 100vh;
 }
 
 .parallaxe2 {
-    background-image: url('../../parallax_effect/parallax2.jpg');
+    background-image: url('../assets/parallax2.jpg');
     min-height: 600px;
 }
 
 .parallaxe3 {
-    background-image: url('../../parallax_effect/parallax3.jpg');
+    background-image: url('../assets/parallax3.jpg');
     min-height: 100vh;
 }
 
