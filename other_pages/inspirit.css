@@ -12,6 +12,17 @@ body, section, header, h1 {
   margin: 0;  /* je supprime les marges pour que le header s'applique sur toute la page */
 }
 
+.listNumber {
+  list-style-type:decimal;
+  
+} 
+
+.listAlpha {
+  list-style-type: lower-alpha;
+  padding: 0 5rem;
+
+}
+
 header {      /* sert de conteneur en position relative pour le div "header_bg" incliné */
     position: fixed;
     width: 100%;    /* 100% du body lui-même fixé à 100% du viewport width */
@@ -61,6 +72,7 @@ header {      /* sert de conteneur en position relative pour le div "header_bg" 
     font-size: 1.5em;
     line-height: 1.2em;
     padding: 100px;
+    background-color: rgb(204, 222, 233)
   }
 
   article h2 {

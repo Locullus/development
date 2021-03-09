@@ -20,23 +20,23 @@
         <section>
             <article>                    
                 <h2>Comment lier une branche distante à un dépôt local</h2>
-                    <p>Si en théorie Git impose une séparation claire entre les branches locales et distantes, en pratique il peut être avantageux de les lier et de les considérer comme des copies toujours fidèles l'une de l'autre.</p>     
+                    <p>Si en théorie Git impose une séparation claire entre les branches locales et distantes, en pratique il peut être avantageux de les lier, les considérant ainsi comme des copies toujours fidèles l'une de l'autre.</p>     
                     <h3>Pourquoi lier une branche distante à une branche locale ?</h3>
-                    <p>Imaginons que vous travaillez sur une branche locale nommée "developpement" et qu'elle soit liée à une branche distante "origin/developpement. Cette relation va s'avérer très utile pour deux raisons :
-                        <od>
-                            <li>les commandes "pull" et "push" deviennent beaucoup plus simple. Avec une branche liée, vous pouvez désormais utiliser ces commandes dans leur mode raccourci "git pull" et "git push" sans avoir à vous soucier des paramètres exacts - dans cet exemple "git push origin developpement".</li>
-                            <li>En outre git va fournir un suivi des fichiers que vous n'avez pas encore synchronisé avec "push" et "pull". Voici un exemple :</li>
-                        </od>
-                        <od>
+                    <p>Imaginons que vous travaillez sur une branche locale nommée "developpement" et qu'elle soit liée à une branche distante "origin/developpement". Cette relation va s'avérer très utile pour deux raisons :
+                        <ol class="listNumber">
+                            <li>les commandes <code>pull</code> et <code>push</code> deviennent beaucoup plus simple. Avec une branche liée, vous pouvez désormais utiliser ces commandes dans leur mode raccourci <code>git pull</code> et <code>git push</code> sans avoir à vous soucier des paramètres exacts - dans cet exemple <code>git push origin developpement</code>.</li>
+                            <li>En outre Git va fournir un suivi des fichiers que vous n'avez pas encore synchronisé avec <code>push</code> et <code>pull</code>. Voici un exemple :</li>
+                        </ol>
+                        <ol class = "listAlpha">
                             <li>si vous avez 2 commits dans votre <i>dépôt local</i> que vous n'avez pas encore envoyé sur le distant, alors git vous signalera que votre branche locale se trouve "en avance de 2 commits" sur la distante.</li>
-                            <li>réciproquement, si 4 commits se trouvent sur la branche distante et que vous n'avez fait aucun "pull", alors git vous précisera que votre branche locale est "en retard de 4 commits" par rapport à la branche distante.</li>
-                        </od><p>                              
+                            <li>réciproquement, si 4 commits se trouvent sur la branche distante et que vous n'avez fait aucun <code>pull</code>, alors git vous précisera que votre branche locale est "en retard de 4 commits" par rapport à la branche distante.</li>
+                        </ol><p>                              
             </article>                
             <div class="brokenLine">
                 <div class="un flex"></div>
                 <div class="deux flex"></div>
                 <div class="trois flex">
-                    <aside></aside>
+                    <aside>on ajoutera du contenu dans cet aside afin de profiter du design de l'encadré. On peut aussi supprimer cet effet... On peut aussi le décaler plus à droite, au-dessus de l'effet incliné de notre section bleue ==></aside>
                 </div>
                 <div class="quatre flex"></div>
             </div>
