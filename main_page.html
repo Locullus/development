@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- page principale du site de MICKAEL BULA -->
+<!-- Objet : mise en application de différentes techniques de mise en forme de site -->
+<!-- date de début : décembre 2020 -->
+<!-- auteur : MICKAEL BULA -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>my personal homepage</title>
+        <!-- url des icones -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- url des polices -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Lato&family=Noto+Sans+JP&family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- le style de la navbar est dans un fichier autonome pour être réutilisé dans chaque page du site -->
+        <link rel="stylesheet" href="my_header.css">
+        <!-- style du reste de la page -->
+        <link rel="stylesheet" href="main_page.css">
+        <!-- la balise <script> doit toujours posséder une balise fermante </script> même sans contenu -->
+        <!-- utilisation de l'attribut booléen "defer" qui permet de différer l'exécution du script js à la fin du traitement <html> -->
+        <script src="main_page.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <!-- boutons du menu  -->
+            <a class="btn fa fa-home active" href="main_page.html"></a> 
+            <a class="btn fa fa-briefcase" href="other_pages/non_rectangular_header2.html"></a>
+            <a class="btn fa fa-linkedin" href="https://www.linkedin.com/in/micka%C3%ABl-bula/"></a>
+            <a class="btn fa fa-envelope" href="#"></a>               
+            <div class="btn fa fa-bars dropdown">
+                <div class="content">
+                    <a href="CV/CV_grid.html">mon CV</a>                
+                    <a href="other_pages/my_parallax.html">développement web</a>
+                    <a href="#">développement d'une API</a>
+                    <a href="#">développement jeux</a>                                        
+                </div>
+            </div>  
+        </header>
+        <main>
+            <section>                
+                <h3 class="fall">MICKAEL BULA</h3>
+                    <div class="empty">
+                        <div id="background">DEVELOPPEUR FRONT-END JUNIOR</div>
+                    </div>
+                <h2>DEVELOPPEUR FRONT-END JUNIOR</h2>
+                
+            </section>
+            <p>prochaine étape : ajouter des images et des liens vers les pages créées, ou signaler que'elles sont accessibles dans le menu</p>
+            <p>Il faudra mettre ces commentaires dans un div dans un style peut-être glassmorphism</p>
+        </main>
+        <!-- pied de page qui contient le copyright -->
+        <footer>
+            <hr>
+        <p>&copy; mickaël bula - 2021</p>
+        </footer>
+    </body>    
+</html> 

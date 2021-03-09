@@ -1,0 +1,126 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', 'Lato', 'Noto Sans JP', 'Open Sans', sans-serif;
+    padding: 10rem 0 0 0;
+    height: 125rem;
+    line-height: 1;
+}
+
+/* on définit les propriétés des images qui resteront mobiles sur le fond d'écran et qui créeront l'effet parallax */
+.parallaxe1, .parallaxe2, .parallaxe3 {
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* la première image est appliquée sur la totalité de l'écran */
+.parallaxe1 {
+    background-image: url('../../parallax_effect/parallax1.jpg');
+    min-height: 100%;min-height: 100vh;
+}
+
+.parallaxe2 {
+    background-image: url('../../parallax_effect/parallax2.jpg');
+    min-height: 600px;
+}
+
+.parallaxe3 {
+    background-image: url('../../parallax_effect/parallax3.jpg');
+    min-height: 100vh;
+}
+
+/* définition d'un bloc qui occupe la totalité du viewport */
+.conteneur {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* simple conteneur avec une hauteur fixe pour accueillir l'image de fond et centrer le titre de la section */
+.petitConteneur {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/* mise en page du titre qui occupe le centre de son conteneur */
+.center {
+    margin: 50px;
+    padding: 0 60px;
+    color: rgba(27, 27, 29, 0.76);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    line-height: 1.3em;     /* augmente la taille de l'interligne pour aérer le texte */
+}
+
+.sectionTitre {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;    
+    left: 50%;top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.resized {
+    max-height: 600px;
+}
+
+.italique {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color:#fff !important;
+}
+
+h2 {
+    font-size: 2rem;
+    justify-content: left;
+    padding-bottom: 1.2em;
+}
+
+/* définition du bloc qui apparaît au scroll et se déplace au-dessus de l'image fixe de fond, créant l'effet recherché */
+
+.grille {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Images rendue responsive */
+img {
+    max-width: 100%;    /* on fixe la taille max de l'image à 100% de son conteneur, de sorte qu'elle n'en dépasse jamais */
+    height: auto;       /* la hauteur de l'image est calculée automatiquement, ce qui évite sa déformation lors du redimensionnement */
+}
+
+article {
+    font-size: 1.5rem;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    color:white;
+}

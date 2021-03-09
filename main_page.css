@@ -1,0 +1,90 @@
+:root {
+    font-size: 16px;
+}
+
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-family: 'Roboto Condensed', 'Lato', 'Noto Sans JP', 'Open Sans', sans-serif;
+    padding: 10rem 1rem 0 1rem;    /* on fixe le padding haut à 10rem afin d'éviter une zone de clique morte sous le header (ce qui se produit avec margin: 10rem...) */
+    height: 125rem;
+    line-height: 1;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+}
+
+.empty {
+    position: relative;
+}
+
+#background {
+    position: absolute;
+    white-space: nowrap;    /* permet d'afficher le titre sur une seule ligne en empêchant le retour à la ligne */
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgb(172, 161, 161);
+    font-weight: bold;
+    font-size: 6.5rem;
+    opacity: 0;
+    animation: fadeOut 3s linear 0.2s;
+}
+
+/* animation qui fait apparaître puis disparaître le texte progressivement */
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* animation qui fait atterrir le texte à son emplacement */
+.fall {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    animation: fall 0.4s linear forwards 0.1s;  /* cette animation laisse le nom apparent sous le menu au scroll... */
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(+2rem);
+    }
+}
+
+table {
+    border-collapse: collapse;  /* pour fusionner les bordures des cellules */
+    text-align: center;
+    margin: auto;
+}
+
+td, th {
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+footer {
+    text-align: center;
+}

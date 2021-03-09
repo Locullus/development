@@ -1,0 +1,6 @@
+Ajouter un cadre noir autour du sadhu et essayer de le faire défiler plus rapidement que le texte adjacent (cf parallax-master).
+Idem pour la photo du yogi chakra.
+Mettre des bords arrondis aux photos.
+Ou essayer de faire bouger la photo à l'intérieur de son cadre : on ne fait apparaître qu'une partie de la photo et lors du survol
+on change les coordonnées en x ou en y avec javscript ou avec CSS.
+Garder la navbar de la landing-page, l'incorporer.

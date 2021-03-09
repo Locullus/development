@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mon effet parallax</title>
+        <!-- url des icones -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- url des polices -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Lato&family=Noto+Sans+JP&family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- adresses locales des fichiers css -->
+        <link rel="stylesheet" href="../my_header.css">
+        <link rel="stylesheet" href="my_parallax.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- boutons du menu  -->
+            <a class="btn fa fa-home active" href="../main_page.html"></a> 
+            <a class="btn fa fa-briefcase" href="../other_pages/non_rectangular_header2.html"></a>
+            <a class="btn fa fa-linkedin" href="https://www.linkedin.com/in/micka%C3%ABl-bula/"></a>
+            <a class="btn fa fa-envelope" href="mailto:bula.mickael@neuf.fr"></a>               
+            <div class="btn fa fa-bars dropdown">
+                <div class="content">
+                    <a href="../CV/CV_grid.html">mon CV</a>                
+                    <a href="my_parallax.html">développement web</a>
+                    <a href="#">développement d'une API</a>
+                    <a href="#">développement jeux</a>                                        
+                </div>
+            </div>  
+        </header>
+        
+        <!-- première section avec effet parallax pleine hauteur avec une image de fond fixe -->
+        <section class="parallaxe1 relative">
+
+            <!-- contenu qui se déplace au scroll sur l'image fixe -->
+            <div class="conteneur">
+              <h1 class="center absolute">premier effet parallax pleine hauteur</h1>
+            </div>
+        </section>
+
+        <!-- section de contenu -->
+        <section>
+            <div class="grille">
+                <aside class="relative"><img class="absolute center" src="../../parallax_effect/SADHU.jpg"/></aside>
+                <article class="center relative">
+                    <div>
+                        <h2>deuxième effet avec un contenu mobile</h2>
+                        <p>Le contenu se déplace au scroll  sur l'image fixe. Ce contenu va recouvrir en totalité l'image fixe du conteneur précédent, 
+                            puis une autre image fixe viendra s'afficher avec une position calculée depuis le bord haut de l'image.</p>
+                            <p>L'image ici affichée à gauche est responsive. Sa taille maximale a été fixée à 100% de son conteneur, de sorte qu'elle n'en déborde pas.
+                                Pour que l'image ne se déforme pas, sa hauteur a été fixée à "auto", laissant le soin au navigateur de la recalculer afin que 
+                                les proportions de l'image soient respectées.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Deuxième effet parallaxe --> 
+        <section class="section parallaxe2">
+            <div class="absolute petitConteneur">
+                <h3 class="sectionTitre">troisième effet parallaxe de nouveau pleine hauteur</h3>
+            </div>            
+        </section>
+        <section>
+            <div class="grille">
+                <article class="center relative">
+                    <div>
+                        <h2>ce dernier effet est identique au deuxième</h2>
+                        <p>Pour autant qu'il fasse son effet, le principe qui sous-tend cette succession d'images fixes et mobiles est tout à fait simple à mettre en place.</p>
+                        <p>Ce qu'il faut bien comprendre c'est d'une part qu'à chaque section il faut déclarer une hauteur et que d'autre part l'image fixe au-dessus de laquelle la section glisse appartient bien à ladite section mais n'affiche dans celle-ci <span class="italique">que les pixels visibles depuis le haut de la page dans sa totalité.</span></p>
+                    </div>
+                </article>
+                <aside class="relative"><img class="absolute center resized" src="../../parallax_effect/Chakra.jpg"/></aside>
+            </div>
+        </section>
+        <!-- Troisième effet parallaxe --> 
+        <section class="section parallaxe3">
+            <div class="absolute petitConteneur">
+                <h3 class="sectionTitre">Contact</h3>
+            </div>
+            <footer>
+                <p>il faut ici ajouter un petit formulaire de prise de contact</p>
+                <p>On y mettra également un pied de page avec copyright</p>
+            </footer>       
+        </section>
+    </body>
+
+    <script src="../main_page.js"></script>
+</html>
